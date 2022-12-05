@@ -15,8 +15,6 @@ ttgJtRGJQctTZtZT
 CrZsJsPPZsGzwwsLwLmpwMDw""".split("\n")
 
 fun getItemPriority(item: Char): Int {
-    val a = 1
-    a + 2
     return when (item) {
         in 'a'..'z' -> (item - 'a') + 1
         in 'A'..'Z' -> (item - 'A') + 27
