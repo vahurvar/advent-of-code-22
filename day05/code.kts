@@ -12,7 +12,8 @@ move 2 from 2 to 1
 move 1 from 1 to 2"""
 
 fun parseInput(string: String): Map<Int, List<Char>> {
-    val matrix = string.split("\n").dropLast(1)
+    val matrix = string.split("\n")
+        .dropLast(1)
         .map { line ->
             line.windowed(size = 4, step = 4, partialWindows = true)
                 .map { s -> s.filter { c -> c.isUpperCase() } }
